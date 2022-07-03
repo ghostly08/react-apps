@@ -1,3 +1,3 @@
 
-// ::::::: Functions :::::::::::
+// ::::::: Desestructuración de objetos :::::::::::
 
