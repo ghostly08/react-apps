@@ -1,3 +1,1 @@
 
-// ::::::: Desestructuración de objetos :::::::::::
-
