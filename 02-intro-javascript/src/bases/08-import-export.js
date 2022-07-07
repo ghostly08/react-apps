@@ -4,16 +4,17 @@ import heroes, { owners } from '../data/heroes';
 
 // :::::::::: REfactorizando function anterior - Segundo paso :::::::::
 
-const getHeroeById = (id) => heroes.find( (heroe) => heroe.id === id); // Cuando sólo es una return podemos quitarle el "if", las llaves y los parentesios
+export const getHeroeById = (id) => heroes.find( (heroe) => heroe.id === id); // Cuando sólo es una return podemos quitarle el "if", las llaves y los parentesios
 
 
-console.log(getHeroeById(2));
+// console.log(getHeroeById(2));
 
 // :::::::: Getting heroes by Owner :::::://
 
-const getHeroeByOwner = (owner) => heroes.filter( (heroe) => heroe.owner === owner);
+export const getHeroeByOwner = (owner) => heroes.filter( (heroe) => heroe.owner === owner);
 
-console.log(getHeroeByOwner('Marvel'));
+// console.log(getHeroeByOwner('Marvel'));
+
 
 // :::::::::: REfactorizando function anterior - Primer paso :::::::::
 
