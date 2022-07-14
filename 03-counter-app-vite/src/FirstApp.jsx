@@ -11,7 +11,7 @@ const message = {
   message: 'Inside of curly braces we can render any JavaScript element but not Javascript objects. So for that, we have to acces to each elemet in the object or turning into JSON stringlify',
 }
 
-// :::::::: Exportable Component :::::::::: //
+// :::::::: Functional Component :::::::::: //
 
 export const FirstApp = () => {
   return (
