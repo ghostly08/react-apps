@@ -11,11 +11,16 @@ const message = {
   message: 'Inside of curly braces we can render any JavaScript element but not Javascript objects. So for that, we have to acces to each elemet in the object or turning into JSON stringlify',
 }
 
+// const Object = ({ title }) => {
+
+// }
+
 // :::::::: Functional Component :::::::::: //
 
 export const FirstApp = () => {
   return (
   <>
+    {/* <h1>{ title }</h1> */}
     <h1> Hello, { name('Steven') }!</h1>
     <h1>{ message.title }</h1>
     <p>{ message.message }</p>
