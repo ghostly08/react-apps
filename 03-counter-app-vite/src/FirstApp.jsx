@@ -19,7 +19,7 @@ const message = {
 
 import PropTypes from 'prop-types';
 
-export const FirstApp = ( {title, subTitle} ) => {
+export const FirstApp = ( {title, subTitle, yourName} ) => {
 
   // if ( !title ) {
   //   throw new Error('Title doesnt exist!');
@@ -29,7 +29,9 @@ export const FirstApp = ( {title, subTitle} ) => {
   <>
     <h1>{ title }</h1>
     <h1> Hello, { name('Steven') }!</h1>
-    <h1>{ message.title }</h1>
+    <h1>{ title }</h1>
+    <h3>{ subTitle }</h3>
+    <h4>{ yourName }</h4>
     <p>{ message.message }</p>
     <code>{ JSON.stringify(message) }</code>
     <h3>New component on First App!!</h3>
@@ -41,6 +43,11 @@ export const FirstApp = ( {title, subTitle} ) => {
 
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
-  subTitle: PropTypes.number.isRequired
+  subTitle: PropTypes.string.isRequired
+}
 
+FirstApp.defaultProps = {
+  title: "Please, type a title!",
+  subTitle: "Here the subtitle",
+  yourName: 'Type your name, please'
 }
