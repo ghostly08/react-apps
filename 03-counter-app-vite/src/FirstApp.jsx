@@ -17,11 +17,13 @@ const message = {
 
 // :::::::: Functional Component :::::::::: //
 
+import PropTypes from 'prop-types';
+
 export const FirstApp = ( {title, subTitle} ) => {
 
-  if ( !title ) {
-    throw new Error('Title doesnt exist!');
-  }
+  // if ( !title ) {
+  //   throw new Error('Title doesnt exist!');
+  // }
 
   return (
   <>
@@ -35,4 +37,10 @@ export const FirstApp = ( {title, subTitle} ) => {
     <p>Fragment behaives like a "div" but dont breaks the html structure</p>
   </>
 );
+}
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.number.isRequired
+
 }
