@@ -17,10 +17,10 @@ const message = {
 
 // :::::::: Functional Component :::::::::: //
 
-export const FirstApp = () => {
+export const FirstApp = ( {title} ) => {
   return (
   <>
-    {/* <h1>{ title }</h1> */}
+    <h1>{ title }</h1>
     <h1> Hello, { name('Steven') }!</h1>
     <h1>{ message.title }</h1>
     <p>{ message.message }</p>
