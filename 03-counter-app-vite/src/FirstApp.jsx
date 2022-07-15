@@ -17,7 +17,12 @@ const message = {
 
 // :::::::: Functional Component :::::::::: //
 
-export const FirstApp = ( {title} ) => {
+export const FirstApp = ( {title, subTitle} ) => {
+
+  if ( !title ) {
+    throw new Error('Title doesnt exist!');
+  }
+
   return (
   <>
     <h1>{ title }</h1>
