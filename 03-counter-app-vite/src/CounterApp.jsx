@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 
 export const CounterApp = ( {value} ) => {
 
-  const [ counter, setCounter ] = useState( 10 );
+  const [ counter, setCounter ] = useState( value ); // is taking the default "value" that we put it in main.jsx file
 
   const handleAdd = ( value) => {
 
     setCounter( counter + 1 );
-
+    // setCounter( (c) => c + 1);
   };
 
   return (
